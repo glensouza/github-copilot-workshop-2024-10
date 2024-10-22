@@ -120,6 +120,14 @@ GitHub Copilot is available in the following IDEs:
 
 ![GitHub Copilot IDEs](./docs/gettingstarted2.jpg)
 
+### What is Microsoft's stance on copyright considerations with GitHub Copilot?
+
+Microsoft has announced a significant expansion of its Copilot Copyright Commitment, now called the Customer Copyright Commitment. This initiative aims to address customer concerns about potential IP infringement when using outputs from Microsoft's AI-powered Copilots and the Azure OpenAI Service. The commitment ensures that if a customer faces a copyright infringement lawsuit due to the use of these AI outputs, Microsoft will defend the customer and cover any adverse judgments or settlements, provided the customer has used the required guardrails and content filters.
+
+This expansion underscores Microsoft's dedication to supporting its customers and mitigating legal risks associated with AI-generated content. The company has built important guardrails into its Copilots to respect authors' copyrights and reduce the likelihood of infringing content. These measures include classifiers, metaprompts, content filtering, and operational monitoring.
+
+By extending this commitment, Microsoft aims to balance the advancement of AI technology with the protection of creative rights, ensuring that AI can continue to spread knowledge and solve societal challenges while respecting the rights of authors and creators. For more informatio please refer to [this](https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns) blog entry.
+
 ## More resources
 
 [![Getting Started with GitHub Copilot](https://img.youtube.com/vi/Fi3AJZZregI/0.jpg)](https://www.youtube.com/watch?v=Fi3AJZZregI)
