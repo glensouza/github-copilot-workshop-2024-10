@@ -37,7 +37,7 @@ And finally, we'll use GitHub Copilot to construct a console an application toge
 
 ## Prompt Engineering
 
-<!-- [Prompt Engineering](./PromptEngineering.md) -->
+[Prompt Engineering](./PromptEngineering.md)
 
 ## Let's make another game using GitHub Copilot
 
