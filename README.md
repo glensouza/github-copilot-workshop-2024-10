@@ -41,23 +41,19 @@ And finally, we'll use GitHub Copilot to construct a console an application toge
 
 ## Let's make another game using GitHub Copilot
 
-Tomorrow we will start by making a game using Dotnet and Visual Studio.
-<!-- [Rock, Paper, Scissors in Dotnet and Visual Studio](./RockPaperScissors.md) -->
+[Rock, Paper, Scissors in Dotnet and Visual Studio](./RockPaperScissors.md)
 
 ## Common Scenarios Where GitHub Copilot Shines
 
-Tomorrow we will look at some common scenarios where GitHub Copilot shines.
-<!-- [Common Scenarios Where GitHub Copilot Shines](./Scenarios.md) -->
+[Common Scenarios Where GitHub Copilot Shines](./Scenarios.md)
 
 ## GitHub Copilot Top Features
 
-Tomorrow we will look at the top features of GitHub Copilot.
-<!-- [GitHub Copilot Top Features](./TopFeatures.md) -->
+[GitHub Copilot Top Features](./TopFeatures.md)
 
 ## Copilot Best Practices (What Not To Do)
 
-Tomorrow we will look at what not to do with GitHub Copilot.
-<!-- [Copilot Best Practices (What Not To Do)](./WhatNotToDo.md) -->
+[Copilot Best Practices (What Not To Do)](./WhatNotToDo.md)
 
 ## Learn More
 
