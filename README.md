@@ -67,3 +67,4 @@ And finally, we'll use GitHub Copilot to construct a console an application toge
 * [Copilot Series](https://gh.io/copilot-series)
 * [Introduction to prompt engineering with GitHub Copilot](https://learn.microsoft.com/en-us/training/modules/introduction-prompt-engineering-with-github-copilot/?WT.mc_id=academic-113596-abartolo)
 * [GitHub Copilot Fundamentals: AI Paired Programming - Pluralsight](https://app.pluralsight.com/library/courses/github-copilot-fundamentals-ai-paired-programming)
+* [Excluding Content From GitHub Copilot](https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/setting-policies-for-copilot-in-your-organization/excluding-content-from-github-copilot)
