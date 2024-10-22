@@ -43,14 +43,6 @@ And finally, we'll use GitHub Copilot to construct a console an application toge
 
 [Rock, Paper, Scissors in Dotnet and Visual Studio](./RockPaperScissors.md)
 
-<!-- ## LLMs That Powers GitHub Copilot -->
-
-<!-- [LLMs That Powers GitHub Copilot](./LLMs.md) -->
-
-<!-- ## Inbound and Outbound Data Flow Behind GitHub Copilot -->
-
-<!-- [Inbound and Outbound Data Flow Behind GitHub Copilot](./DataFlow.md) -->
-
 ## Common Scenarios Where GitHub Copilot Shines
 
 [Common Scenarios Where GitHub Copilot Shines](./Scenarios.md)
