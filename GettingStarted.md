@@ -39,6 +39,16 @@ The first thing is the file that you're currently working in. Copilot doesn't ju
 
 The next part of context that is provided to Copilot are the other open tabs within the IDE. It's important to mention that your entire project is not used as context when you're using GitHub Copilot. If you're working in a large project, if Copilot scanned the entire project, that would be a lot of files and information for Copilot to parse through and generate suggestions. Most of that data wouldn't be relevant to the specific code suggestions you're looking for. But, even if the entire project data is unnecessary, it would be useful for Copilot to see some files within the project that are relevant to the file you're working in. For example, if you're working in an index.html file that references a CSS file and you want to call a new CSS class inside a div element within that index.html file, it would be useful for Copilot to have context of that CSS file to provide custom suggestions to you with that CSS file as context, instead of just generic information. You can tell GitHub Copilot to look at specific files by using tabs within your editor. In addition, Copilot will focus most on the tab next to the file that you're in and will work its way to the other tabs if opened.
 
+#### Excluding content from GitHub Copilot
+
+GitHub Copilot now allows repository administrators and organization owners to exclude specific files from Copilot's access. This means Copilot won't provide code completions or use the content in its suggestions or chat responses for these files.
+
+To set up exclusions, administrators can specify paths to files or directories within their repository settings. For organizations, exclusions can be applied across multiple repositories or even to files outside of Git control. This ensures sensitive or irrelevant content remains untouched by Copilot's AI.
+
+Testing these exclusions is straightforward. In IDEs like Visual Studio and Visual Studio Code, you can check if the Copilot icon in the status bar has a diagonal line through it, indicating that exclusions are in effect. Additionally, you can ask Copilot Chat about the excluded files to confirm that it cannot access them.
+
+This feature is currently in public preview, so it's subject to change. For more detailed steps and examples, you can check out the full documentation [here](https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/setting-policies-for-copilot-in-your-organization/excluding-content-from-github-copilot).
+
 ### Prompt Crafting Best Practices
 
 Generative AI has opened up incredible possibilities, especially when it comes to generating content. However, the secret sauce lies in giving the AI the right instructions. We call these instructions prompts. Essentially, prompts guide the AI on what you want it to create. And crafting a good prompt is like giving the AI a road map, it helps it know where to go and how to get there.
@@ -112,4 +122,5 @@ GitHub Copilot is available in the following IDEs:
 
 ## More resources
 
-[![Getting Started with GitHub Copilot](https://img.youtube.com/vi/Fi3AJZZregI/0.jpg)](https://www.youtube.com/watch?v=Fi3AJZZregI)
+* [Excluding Content From GitHub Copilot](https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/setting-policies-for-copilot-in-your-organization/excluding-content-from-github-copilot)
+* [![Getting Started with GitHub Copilot](https://img.youtube.com/vi/Fi3AJZZregI/0.jpg)](https://www.youtube.com/watch?v=Fi3AJZZregI)

@@ -31,21 +31,17 @@ And finally, we'll use GitHub Copilot to construct a console an application toge
 
 [Getting Started with GitHub Copilot](./GettingStarted.md)
 
-<!--
 ## Let's make a game using GitHub Copilot
 
 [Snake Game](./SnakeGame.md)
--->
 
 ## Prompt Engineering
 
 [Prompt Engineering](./PromptEngineering.md)
 
-<!--
 ## Let's make another game using GitHub Copilot
 
 [Rock, Paper, Scissors in Dotnet and Visual Studio](./RockPaperScissors.md)
--->
 
 ## Common Scenarios Where GitHub Copilot Shines
 
