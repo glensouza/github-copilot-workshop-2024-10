@@ -68,3 +68,4 @@ Tomorrow we will look at what not to do with GitHub Copilot.
 * [Introduction to prompt engineering with GitHub Copilot](https://learn.microsoft.com/en-us/training/modules/introduction-prompt-engineering-with-github-copilot/?WT.mc_id=academic-113596-abartolo)
 * [GitHub Copilot Fundamentals: AI Paired Programming - Pluralsight](https://app.pluralsight.com/library/courses/github-copilot-fundamentals-ai-paired-programming)
 * [Excluding Content From GitHub Copilot](https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/setting-policies-for-copilot-in-your-organization/excluding-content-from-github-copilot)
+* [Copilot Copyright Commitment](https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns)
