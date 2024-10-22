@@ -122,5 +122,4 @@ GitHub Copilot is available in the following IDEs:
 
 ## More resources
 
-* [Excluding Content From GitHub Copilot](https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/setting-policies-for-copilot-in-your-organization/excluding-content-from-github-copilot)
-* [![Getting Started with GitHub Copilot](https://img.youtube.com/vi/Fi3AJZZregI/0.jpg)](https://www.youtube.com/watch?v=Fi3AJZZregI)
+[![Getting Started with GitHub Copilot](https://img.youtube.com/vi/Fi3AJZZregI/0.jpg)](https://www.youtube.com/watch?v=Fi3AJZZregI)
