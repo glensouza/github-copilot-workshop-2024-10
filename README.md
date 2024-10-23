@@ -27,33 +27,15 @@ And finally, we'll use GitHub Copilot to construct a console an application toge
 * [GitHub Copilot Extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 * [GitHub Copilot Chat Extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)
 
-## Getting Started with GitHub Copilot
+## Agenda
 
-[Getting Started with GitHub Copilot](./GettingStarted.md)
-
-## Let's make a game using GitHub Copilot
-
-[Snake Game](./SnakeGame.md)
-
-## Prompt Engineering
-
-[Prompt Engineering](./PromptEngineering.md)
-
-## Let's make another game using GitHub Copilot
-
-[Rock, Paper, Scissors in Dotnet and Visual Studio](./RockPaperScissors.md)
-
-## Common Scenarios Where GitHub Copilot Shines
-
-[Common Scenarios Where GitHub Copilot Shines](./Scenarios.md)
-
-## GitHub Copilot Top Features
-
-[GitHub Copilot Top Features](./TopFeatures.md)
-
-## Copilot Best Practices (What Not To Do)
-
-[Copilot Best Practices (What Not To Do)](./WhatNotToDo.md)
+* [Getting Started with GitHub Copilot](./GettingStarted.md)
+* [Let's make a Snake Game using GitHub Copilot](./SnakeGame.md)
+* [Prompt Engineering](./PromptEngineering.md)
+* [Let's make Rock, Paper, Scissors game in Dotnet and Visual Studio using GitHub Copilot](./RockPaperScissors.md)
+* [Common Scenarios Where GitHub Copilot Shines](./Scenarios.md)
+* [GitHub Copilot Top Features](./TopFeatures.md)
+* [Copilot Best Practices (What Not To Do)](./WhatNotToDo.md)
 
 ## Learn More
 
