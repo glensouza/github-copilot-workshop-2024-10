@@ -87,16 +87,6 @@ The level and quality or responses vary between the languages. It will depend on
 
 Over time, GitHub Copilot will only get better and more robust as more data is fed into its training models.
 
-### Is code from GitHub Copilot secure?
-
-Since GitHub Copilot offers suggestions from a model that OpenAI built from billions of lines of open source code, it's possible that a training set provided to the model may contain insecure coding patterns, bugs, or references to outdated or incorrect information.
-
-⚠️ It's your responsibility to ensure the quality and security of your code, especially when accepting code suggestions from AI‑produced results. Take precautions when using code generated from GitHub Copilot just like you would when reviewing code suggestions from Stack Overflow, a team member, or just about anything you didn't write yourself.
-
-Some common precautions that you can take include robust testing and setting up automated tracking for security vulnerabilities. GitHub provides several features that are free to use in public repositories to help you monitor, secure, and improve the quality of your code such as code scanning and Dependabot. We won't cover those in this workshop, but navigating to [GitHub Advanced Security's documentation](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) can provide more insight into enabling these features in your own GitHub repositories.
-
-One more thing when it comes to the core product of GitHub Copilot is that it will filter and block offensive words and sensitive information from its provided suggestions.
-
 ### Is GitHub Copilot free?
 
 GitHub Copilot is a paid feature that requires a monthly or yearly subscription. GitHub does provide GitHub Copilot for free to verified students, teachers, and maintainers of popular open source projects. Anyone wanting to try out Copilot for the first time can do so with a [30‑day free trial](https://github.com/github-copilot/signup).
@@ -119,6 +109,16 @@ GitHub Copilot is available in the following IDEs:
 * Vim or Neovim
 
 ![GitHub Copilot IDEs](./docs/gettingstarted2.jpg)
+
+### Is code from GitHub Copilot secure?
+
+Since GitHub Copilot offers suggestions from a model that OpenAI built from billions of lines of open source code, it's possible that a training set provided to the model may contain insecure coding patterns, bugs, or references to outdated or incorrect information.
+
+⚠️ It's your responsibility to ensure the quality and security of your code, especially when accepting code suggestions from AI‑produced results. Take precautions when using code generated from GitHub Copilot just like you would when reviewing code suggestions from Stack Overflow, a team member, or just about anything you didn't write yourself.
+
+Some common precautions that you can take include robust testing and setting up automated tracking for security vulnerabilities. GitHub provides several features that are free to use in public repositories to help you monitor, secure, and improve the quality of your code such as code scanning and Dependabot. We won't cover those in this workshop, but navigating to [GitHub Advanced Security's documentation](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) can provide more insight into enabling these features in your own GitHub repositories.
+
+One more thing when it comes to the core product of GitHub Copilot is that it will filter and block offensive words and sensitive information from its provided suggestions.
 
 ### What is Microsoft's stance on copyright considerations with GitHub Copilot?
 
