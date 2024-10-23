@@ -1,0 +1,154 @@
+﻿@page "/game"
+
+@inject Blazored.LocalStorage.ILocalStorageService LocalStorage
+
+<div class="game-container">
+    <h3>Rock, Paper, Scissors, Lizard, Spock Game</h3>
+
+    <p>Choose your weapon:</p>
+    <div class="icons-container">
+        <!-- Icons for each choice in the game -->
+        <div class="icon-item">
+            <img src="images/rock.png" alt="Rock" class="game-icon" @onclick="() => this.PlayGame(Rock)" />
+            <p>Rock</p>
+        </div>
+        <div class="icon-item">
+            <img src="images/paper.png" alt="Paper" class="game-icon" @onclick="() => this.PlayGame(Paper)" />
+            <p>Paper</p>
+        </div>
+        <div class="icon-item">
+            <img src="images/scissors.png" alt="Scissors" class="game-icon" @onclick="() => this.PlayGame(Scissors)" />
+            <p>Scissors</p>
+        </div>
+        <div class="icon-item">
+            <img src="images/lizard.png" alt="Lizard" class="game-icon" @onclick="() => this.PlayGame(Lizard)" />
+            <p>Lizard</p>
+        </div>
+        <div class="icon-item">
+            <img src="images/spock.png" alt="Spock" class="game-icon" @onclick="() => this.PlayGame(Spock)" />
+            <p>Spock</p>
+        </div>
+    </div>
+    
+    @if (!string.IsNullOrEmpty(this.result))
+    {
+        <!-- Display the result and scores if a game has been played -->
+        <p>Computer chose: <span class="choice">@this.computerChoice</span></p>
+        <p class="@this.GetResultClass()">@this.result</p>
+        <div class="score-container">
+            <p>Wins: @this.wins</p>
+            <p>Losses: @this.losses</p>
+            <p>Total Games: @this.totalGames</p>
+            <p>Win Percentage: @this.GetWinPercentage()</p>
+            <p>Top Score: @this.topScore</p>
+            <button class="btn btn-danger" @onclick="this.ResetScore">Reset Score</button>
+            <button class="btn btn-primary" @onclick="this.RestartGame">Restart Game</button>
+        </div>
+    }
+    else
+    {
+        <div class="score-container">
+            <p>Top Score: @this.topScore</p>
+        </div>
+    }
+</div>
+
+@code {
+    // Constants for the game choices
+    private const string Rock = "Rock";
+    private const string Paper = "Paper";
+    private const string Scissors = "Scissors";
+    private const string Lizard = "Lizard";
+    private const string Spock = "Spock";
+    private readonly string[] choices = [Rock, Paper, Scissors, Lizard, Spock];
+
+    // Variables to store the game state
+    private string computerChoice = "";
+    private string result = "";
+    private int wins;
+    private int losses;
+    private int totalGames;
+    private int topScore;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Load the top score from local storage
+        this.topScore = await this.LocalStorage.GetItemAsync<int>("topScore");
+    }
+
+    // Method to play the game
+    private async void PlayGame(string playerChoice)
+    {
+        // Randomly select the computer's choice
+        Random random = new();
+        int index = random.Next(0, this.choices.Length);
+        this.computerChoice = this.choices[index];
+
+        // Determine the result of the game
+        if (playerChoice == this.computerChoice)
+        {
+            this.result = "It's a tie!";
+        }
+        else if ((playerChoice == Rock && this.computerChoice is Scissors or Lizard) ||
+                 (playerChoice == Paper && this.computerChoice is Rock or Spock) ||
+                 (playerChoice == Scissors && this.computerChoice is Paper or Lizard) ||
+                 (playerChoice == Lizard && this.computerChoice is Spock or Paper) ||
+                 (playerChoice == Spock && this.computerChoice is Scissors or Rock))
+        {
+            this.result = "You win!";
+            this.wins++;
+        }
+        else
+        {
+            this.result = "You lose!";
+            this.losses++;
+        }
+
+        // Update the total games played
+        this.totalGames++;
+
+        // Update the top score if the current wins exceed the top score
+        if (this.wins <= this.topScore)
+        {
+            return;
+        }
+
+        this.topScore = this.wins;
+        await this.LocalStorage.SetItemAsync("topScore", this.topScore);
+    }
+
+    // Method to get the CSS class for the result
+    private string GetResultClass()
+    {
+        return this.result switch
+        {
+            "You win!" => "result result-win",
+            "You lose!" => "result result-lose",
+            "It's a tie!" => "result result-tie",
+            _ => "result"
+        };
+    }
+
+    // Method to calculate the win percentage
+    private string GetWinPercentage()
+    {
+        return this.totalGames == 0 ? "0%" : $"{(int)((double)this.wins / this.totalGames * 100)}%";
+    }
+
+    // Method to reset the scores
+    private void ResetScore()
+    {
+        this.wins = 0;
+        this.losses = 0;
+        this.totalGames = 0;
+        this.result = "";
+        this.computerChoice = "";
+    }
+
+    private void RestartGame()
+    {
+        this.result = string.Empty;
+        this.computerChoice = string.Empty;
+        // Add any other state reset logic here
+    }
+}

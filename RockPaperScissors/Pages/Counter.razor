@@ -1,0 +1,18 @@
+﻿@page "/counter"  
+
+<PageTitle>Counter</PageTitle>  <!-- Sets the title of the page -->
+
+<h1>Counter</h1>  <!-- Header for the counter component -->
+
+<p role="status">Current count: @(this.currentCount)</p>  <!-- Displays the current count -->
+
+<button class="btn btn-primary" @onclick="this.IncrementCount">Click me</button>  <!-- Button to increment the count -->
+
+@code {
+    private int currentCount = 0;  // Field to store the current count
+
+    private void IncrementCount()  // Method to increment the count
+    {
+        this.currentCount++;
+    }
+}
